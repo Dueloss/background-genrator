@@ -5,8 +5,8 @@ const css = document.querySelector('h3');
 
 window.addEventListener('DOMContentLoaded', (event) => {
   setColor();
-  colorPicker1.addEventListener("change", setColor);
-  colorPicker2.addEventListener("change", setColor);
+  colorPicker1.addEventListener("input", setColor);
+  colorPicker2.addEventListener("input", setColor);
 });
 const setColor = () => {
   console.log("clicked");
